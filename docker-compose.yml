@@ -1,0 +1,11 @@
+version:  '3'
+services:
+  datascience-notebook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./store-item-demand-forecasting-challenge:/home/jovyan/store-item-demand-forecasting-challenge
+    ports:
+      - 8888:8888
+    container_name: jupyter_notebook

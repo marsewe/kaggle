@@ -5,8 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./home-credit-default-risk:/home/jovyan/home-credit-default-risk
-      - ./store-item-demand-forecasting-challenge:/home/jovyan/store-item-demand-forecasting-challenge
+      - ./:/home/jovyan
     ports:
       - 8888:8888
     container_name: jupyter_notebook
